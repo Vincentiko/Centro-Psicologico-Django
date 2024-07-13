@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+}
+
+.conectemos-img {
+    padding-top: 150;
+    margin-top: 150px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.texto-conectemos {
+    text-align: center;
+    padding: 50px;
+    padding-top: 350px;
+    padding-bottom: 150px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 300px; /* Ajusta los márgenes para mantener la consistencia */
+    width: auto;
+}
+
+.card {
+    margin-top: 20px;
+    width: 18rem;
+}
+
+.img-atencion {
+    justify-content: space-between; 
+    text-align: center;
+}
+
+.textol {
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(240, 191, 76);
+}
+
+.container-flexible {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 50px;
+    padding-right: 20px;
+    overflow: hidden; 
+}
+
+/* Añadir estilos responsivos */
+@media (max-width: 768px) {
+    .mision-vision {
+        flex-direction: column;
+        margin: 0 20px; /* Reducir el margen para pantallas más pequeñas */
+    }
+
+    .card {
+        width: 100%; /* Asegura que las tarjetas ocupen el ancho completo en pantallas pequeñas */
+    }
+
+    .container-flexible {
+        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    }
+    #mision{
+        width: 85%;
+    }
+
+    #vision{
+        width: 85%;
+    }
+
+}
+
+/* Añadir estilos responsivos */
+@media (max-width: 820px) {
+    .mision-vision {
+        flex-direction: column;
+        margin: 0 20px; /* Reducir el margen para pantallas más pequeñas */
+    }
+
+    .card {
+        width: 100%; /* Asegura que las tarjetas ocupen el ancho completo en pantallas pequeñas */
+    }
+
+    .container-flexible {
+        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    }
+    #mision{
+        width: 85%;
+    }
+
+    #vision{
+        width: 85%;
+    }
+
+}
+
+/* Añadir estilos responsivos */
+@media (max-width: 1024px) {
+    .mision-vision {
+        flex-direction: column;
+        margin: 0 20px; /* Reducir el margen para pantallas más pequeñas */
+    }
+
+    .card {
+        width: 100%; /* Asegura que las tarjetas ocupen el ancho completo en pantallas pequeñas */
+    }
+
+    .container-flexible {
+        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    }
+    #mision{
+        width: 85%;
+    }
+
+    #vision{
+        width: 85%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .mision-vision {
+        flex-direction: column;
+        margin: 0 20px; /* Reducir el margen para pantallas más pequeñas */
+    }
+    .card {
+        width: 100%; /* Asegura que las tarjetas ocupen el ancho completo en pantallas pequeñas */
+    }
+
+    .container-flexible {
+        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    }
+    #mision{
+        width: 100%;
+    }
+
+    #vision{
+        width: 100%;
+    }
+
+}
+@media (max-width: 360px) {
+    .mision-vision {
+        flex-direction: column;
+        margin: 0 20px; /* Reducir el margen para pantallas más pequeñas */
+    }
+    .card {
+        width: 100%; /* Asegura que las tarjetas ocupen el ancho completo en pantallas pequeñas */
+    }
+
+    .container-flexible {
+        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    }
+    #mision{
+        width: 100%;
+    }
+
+    #vision{
+        width: 100%;
+    }
+
+}

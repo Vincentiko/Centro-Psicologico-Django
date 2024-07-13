@@ -1,0 +1,21 @@
+
+.btn-group {
+    margin-top: 5px;
+}
+
+
+/* Estilo base para las imágenes */
+.flex-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
+}
+
+/* Ajustes para pantallas pequeñas (hasta 576px) */
+@media (max-width: 414px) {
+    .flex-container img {
+        width: 50%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Ajusta la altura automáticamente según el ancho para mantener la relación de aspecto */
+        margin-bottom: 1rem; /* Añade espacio inferior entre las imágenes */
+    }
+}

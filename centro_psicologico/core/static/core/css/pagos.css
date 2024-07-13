@@ -1,0 +1,166 @@
+.texto-pago {
+    text-align: center;
+}
+
+.archivo {
+    text-align: center;
+}
+
+.archivo img {
+    width: 20%;
+}
+
+.confirmar {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.calendario {
+    margin-top: 30px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.agenda {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.fecha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fecha span {
+    margin-right: 10px;
+}
+
+.arrow-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.mes-ano {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.mes-ano select {
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.horas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hora-btn{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.hora-btn:active
+{
+    background-color: #ccc; /* Cambia el color de fondo cuando se hace clic en el botón */
+    color: #000; 
+}
+
+.ubicacion {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group div {
+    margin-right: 10px;
+}
+
+.enviar-btn {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#modal-mensaje{
+    .modal-content{
+        padding: 12px;
+        
+    }
+
+    p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.hora-btn {
+    margin: 5px;
+}
+.hora-btn.selected{
+    background-color: #007bff;
+    color: white;
+}
+
+.muestra-reserva{
+    text-align: center;
+}

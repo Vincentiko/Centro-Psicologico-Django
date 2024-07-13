@@ -1,0 +1,85 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<div class="main">
+    <div class="container-fluid">
+        <div class="col-12 text-center"> <!-- Columna que ocupa todo el ancho en dispositivos pequeños -->
+            <div class="conectemos-img">
+                <img src="{% static 'core/Imagen/psicologia-logo.png' %}" class="img-fluid" alt="conectemos">
+            </div>
+        </div>
+    </div>
+    <!-- Carrusel -->
+    <div class="container-flexible">
+        <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false">
+            <div class="carousel-inner base">
+                <div class="carousel-item active">
+                    <img src="{% static 'core/Imagen/Carrusel/Carrusel-terapia-gen.jpg' %}" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/Imagen/Carrusel/Carrusel-terapia-indivi.jpg' %}" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/Imagen/Carrusel/Carrusel-terapia-pareja.jpg' %}" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="d-flex justify-content-center">
+            <div class="col-6 col-md-2 base">
+                <!-- Contenido de la primera columna -->
+                <img src="{% static 'core/Imagen/iconos/icono-terapia-indi.png' %}" class="img-fluid d-block w-100" alt="">
+            </div>
+            <div class="col-6 col-md-2 base">
+                <!-- Contenido de la segunda columna -->
+                <img src="{% static 'core/Imagen/iconos/icono-terapia-pareja.png' %}" class="img-fluid w-100 h-100" alt="">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="col-6 col-md-2 base">
+                <!-- Contenido de la tercera columna -->
+                <img src="{% static 'core/Imagen/iconos/icono-terapia-familiar.png' %}" style="background-color: white;"
+                    class="img-fluid w-100 h-100" alt="">
+            </div>
+            <div class="col-6 col-md-2 base">
+                <!-- Contenido de la cuarta columna -->
+                <img src="{% static 'core/Imagen/iconos/icono-tele-terapia.png' %}" style="background-color: white;" class="img-fluid"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 30px;"></div>
+    <br>
+
+    <div class="container">
+        <div class="text-center">
+            <a href="{% url 'terapias' %}" class="boton">Haz click para ver las terapías</a>
+        </div>
+        <div style="padding: 30px;"></div>
+        <p class="text-center">
+            Días malos, días buenos, es la rutina la que uno debe enfrentarse día a día, pero llega un punto en el que
+            colapsas, porque viene un recuerdo de algo que ya sucedio y diambula en tu mente<br>
+            ¿Te has sentido así? <br>
+            Pues bienvenido a Conectemos Chile, en donde nuestros especialistas <br>
+            están listos para ayudarte, volvamos a conectarnos"
+        </p>
+    </div>
+</div> 
+{% endblock %}
+
+
+

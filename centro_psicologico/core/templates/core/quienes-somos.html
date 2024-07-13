@@ -1,0 +1,112 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Quienes somos{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'core/css/quienes-somos.css' %}">
+
+
+  <div class="main">
+    <div class="container-fluid">
+      <div class="col-12 text-center">
+        
+        <div class="conectemos-img" >
+          <img src="{% static 'core/Imagen/quienes-somos/cone.png' %}" class="img-fluid" alt="conectemos">
+        </div>
+      </div>
+    </div>
+    <div>
+      <br>
+      <br>
+
+      <div class="texto-conectemos">
+        <h3>Somos un Centro Psicológico con el más alto nivel profesional.</h3>
+        <br>
+        <h3>Te ofrecemos Evaluación Psicológica, Diagnóstico Clínico, Plan de Tratamiento personalizado y Terapia
+          Psicológica para Adultos.</h3>
+      </div>
+    </div>
+
+    <div class="mision-vision container-flexible">
+      <div class="card" style="width: 20rem;">
+        <img src="{% static 'core/Imagen/quienes-somos/mision.png' %}" alt="mision" id="mision">
+        <div class="card-body">
+          <p class="card-text" style="font-size: 22px; text-align: center;">Conectemos Chile SPA. Tiene como fin promover la salud mental y emocional de sus
+            usuarios,
+            en cualquier parte del mundo de habla hispana, médiate el teletrabajo, buscando convertirse en una
+            microempresa al compromiso de sus pacientes, siendo parte de la vida y el crecimiento de cada uno/a,
+            entregado
+            herramientas emocionales y sociales para fomentar el potencial de mejora en la calidad de vida de los
+            pacientes y de sus respectivos terapeutas.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="{% static 'core/Imagen/quienes-somos/vision.png' %}" alt="vision" id="vision">
+        <div class="card-body">
+          <p class="card-text" style="font-size: 22px; text-align: center;">Promover la importancia de la salud mental a través del acompañamiento psicológico de
+            profesionales comprometidos con cada persona de manera integral y transdisciplinaria, ofreciendo una
+            perspectiva holística y humana del quehacer profesional, creciendo en conjunto para mejorar la calidad de
+            vida
+            de nuestros usuarios, pacientes o clientes.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="top">
+      <div class="img-atencion">
+        <img decoding="async" src="{% static 'core/Imagen/quienes-somos/atencion-indi.png' %}" alt="">
+        <h2>Atención Personal</h2>
+        <p style="font-size: 22px;">Evaluación psicológica, diagnóstico clínico,</p>
+        <p style="font-size: 22px;">plan de tratamiento personalizado, terapia psicológica</p>
+      </div>
+      <div class="img-atencion">
+        <img decoding="async" src="{% static 'core/Imagen/quienes-somos/atencion-pareja.png' %}" alt="">
+        <h2>Terapia de Parejas</h2>
+        <p style="font-size: 22px;">Te ayudamos a solucionar problemas, entender y comunicarte con tu pareja y generar</p>
+        <p style="font-size: 22px;">nuevas instancias y oportunidades en la relación.</p>
+      </div>
+    </div>
+
+    <div class="textol">
+      <h1 class="woodmart-title-container title wd-fontsize-l wd-underline-colored">Contamos con un equipo de
+        profesionales certificados,
+        <br>experimentados y comprometidos con la
+        <br>salud mental de nuestros pacientes.
+      </h1>
+    </div>
+
+    <div class="mapa-container">
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.587040804665!2d-70.61284944591263!3d-33.426140048460674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfa8f0642ca9%3A0x63f3ce6545c0304a!2sAv.%20Pedro%20de%20Valdivia%20273%2C%207500000%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1713063277119!5m2!1ses-419!2scl"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="carta-container">
+      <div class="carta">
+        <div class="carta-cuerpo">
+          <h4>Atención Presencial</h4>
+          <br>
+          <h4>Santiago</h4>
+          <h5>Av.Pedro de Valdivia 273,</h5>
+          <h5>Edificio Snap, Providencia.</h5>
+          <br>
+          <h4>Email: contacto@conectemoschile.cl</h4>
+          <h4>Phone: +569 2199 1963</h4>
+          <h3>Contáctanos</h3>
+          <br>
+          <h5>Si estas buscando atención psicológica o tienes alguna duda,</h5>
+          <h5>te rogamos que nos contactes, te responderemos a la brevedad posible.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 50px;">
+
+  </div>
+{% endblock %}

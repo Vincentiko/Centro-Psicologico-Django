@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Confirmación de pago{% endblock %}
+{% block content %}
+
+<div class="main">
+  <div class="d-flex align-items-center justify-content-center " style="height: 100vh;">
+    <div class="row g-0 bg-body-secondary position-relative base" style="max-width: 800px;">
+      <div class="col-12 p-4 text-center ">
+        <h2 class="titulo">CONFIRMACIÓN DE SU COMPRA</h2>
+        <p>Gracias por confiar en nosotros. Daremos lo mejor para ser ese apoyo que necesitas para ser tu mejor versión.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modal-compra-exitosa" tabindex="-1" aria-labelledby="modalCompraExitosaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalCompraExitosaLabel">Compra Exitosa</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              Compra realizada correctamente.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="{% static 'core/js/reserva.js' %}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      limpiarLocalStorageFIN()
+  });
+
+  function mostrarMensajeEnModal(mensaje) {
+      document.getElementById('modalCompraExitosaLabel').innerText = 'Compra Exitosa';
+      document.querySelector('#modal-compra-exitosa .modal-body').innerText = mensaje;
+      $('#modal-compra-exitosa').modal('show');
+  }
+</script>
+{% endblock %}

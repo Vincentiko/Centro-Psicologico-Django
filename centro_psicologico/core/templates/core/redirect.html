@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigiendo...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Esperar 5 segundos y luego redirigir
+        setTimeout(function() {
+            window.location.href = "{% url 'confirmar' %}";
+        }, 5000);
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Redirigiendo...</h1>
+        <p>Serás redirigido a tu página anterior en 5 segundos.</p>
+    </div>
+</body>
+</html>

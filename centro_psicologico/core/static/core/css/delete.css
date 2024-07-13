@@ -1,0 +1,13 @@
+body {
+    margin-top: 300px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 90 auto;
+    margin-top: 100px;
+}
+
+.errorlist {
+    color: red;
+}

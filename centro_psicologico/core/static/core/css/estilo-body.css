@@ -1,0 +1,109 @@
+body {
+    /* CUERPO */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0bf4c;
+    position: relative;
+    
+}
+
+
+/*imagen de carrusel index permite que se quede centrada y no cambie su tamaño o deforme su posicion*/
+.container-flexible {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 50px;
+    padding-right: 20px;
+    overflow: hidden; 
+}
+
+.carousel-inner {
+    width: 700px;
+    height: auto; 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
+@media screen and (max-width: 768px) {
+    .container-flexible {
+        padding-top: 20px; 
+    }
+
+    .carousel-inner {
+        width: 90%; 
+    }
+}
+
+/* Ajusta el tamaño de las imágenes en pantallas grandes y extra grandes */
+@media (min-width: 992px) {
+    .col-6 {
+        flex: 0 0 10%; 
+        max-width: 10%; 
+    }
+}
+
+
+/* Elimina los estilos w-100 y h-100 de las imágenes en las columnas */
+.flex-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Ajusta el tamaño de las columnas en dispositivos pequeños */
+@media (max-width: 576px) {
+    .col-6 {
+        flex: 0 0 35%; 
+        max-width: 35%; 
+    }
+}
+
+.conectemos-img {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+    padding-top: 250px;
+    
+}
+
+
+span#logo-index{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+span#slogan{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 500px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgb(207, 165, 87);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 5px; 
+}
+
+.boton:hover {
+    background-color: rgb(40, 148, 137);
+}
+
+.nav-item {
+    list-style-type: none;
+}

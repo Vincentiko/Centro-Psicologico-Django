@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Borrar perfil{% endblock %}
+{% block content %}
+<div style="padding: 75px;"></div>
+<main role="main">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-9 mx-auto">
+        <div>
+            <form action="" method="post">{% csrf_token %}
+                <p>¿Estás seguro de que quieres borrar "{{ object }}"?</p>
+                <input type="submit" value="Sí, borrar el perfil"/>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

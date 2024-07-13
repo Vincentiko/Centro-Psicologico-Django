@@ -1,0 +1,15 @@
+body {
+    margin-top: 150px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 90 auto;
+}
+
+.errorlist {
+    color: red;
+}
+.abajo {
+    margin-top: 150px;
+}

@@ -1,0 +1,101 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Pago de consulta{% endblock %}
+{% block content %}
+<div style="padding: 75px;"></div>
+
+<style>
+  .hora-btn.selected {
+    background-color: #007bff;
+    color: #fff; 
+    border-color: #007bff; 
+}
+.hora-btn{
+  background-color: white; 
+}
+</style>
+
+<div class="container">
+    <h1>Reserva de Hora</h1>
+    <form id="reserva-form">
+        <div class="tex">
+            <div class="mb-3">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombreReserva" name="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellidoReserva" name="apellido" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="tel" name="telefono2" id="telefono2" class="form-control" placeholder="95828472">
+            </div>
+            <div class="mb-4">
+                <select id="tipo" class="form-select" aria-label="Default select example">
+                  <option value="">Escoja el tipo de terapía que desea:</option>
+                  <option value="0">Terapía Individual</option>
+                  <option value="1">Terapía de Parejas</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <select id="tipo2" class="form-select" aria-label="Default select example">
+                  <option value="">Escoja el tipo de modalidad:</option>
+                  <option value="0">Presencial</option>
+                  <option value="1">Online</option>
+                </select>
+            </div>
+            <p>** Si usted no es de primer ciclo, inicie sesión para confirmar su monto de consulta **</p>
+        </div>
+        <div class="agenda">
+            <h2>Agenda</h2>
+            <div class="fecha form-group">
+                <label for="fecha" class="form-label">Fecha deseada:</label>
+                <input type="date" required max="2024-12-31" class="form-control" id="fecha" placeholder="Elige la fecha!">
+            </div>
+            <div class="horas form-group">
+                <label>Seleccione una hora:</label>
+                <div>
+                    <button type="button" class="hora-btn btn btn-outline-primary">09:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">10:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">11:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">12:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">13:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">14:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">15:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">16:00</button>
+                    <button type="button" class="hora-btn btn btn-outline-primary">17:00</button>
+                </div>
+            </div>
+            <div class="ubicacion">
+                <span>Av. Pedro de Valdivia 273</span>
+            </div>
+        </div>
+        <button type="button" href="{% url 'carrito' %}" class="btn btn-primary" onclick="verificar()">Confirmar</button>
+    </form>
+</div>
+<div class="modal fade" id="modal-reserva-exitosa" tabindex="-1" aria-labelledby="modalReservaExitosaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalReservaExitosaLabel">Reserva Exitosa</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              La reserva ha sido agregada al carrito de compras
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+          </div>
+      </div>
+  </div>
+</div>
+  <script src="{% static 'core/js/reserva.js' %}"></script>
+  
+
+
+  <div style="padding: 50px;"></div>
+  
+{% endblock %}
+

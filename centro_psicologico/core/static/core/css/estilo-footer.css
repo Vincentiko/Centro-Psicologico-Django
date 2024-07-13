@@ -1,0 +1,67 @@
+/* INICIO decoracion de logos y nombres de logo de las redes sociales*/
+#logo-instagram:hover,
+#logo-facebook:hover,
+#logo-whatsapp:hover{
+    font-weight: bold;
+    color: black;
+}
+
+#logo-instagram,
+#logo-facebook,
+#logo-whatsapp{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#logo-instagram{
+    color: #E4405F;
+}
+
+#nombre-red-social-instragam {
+    background: linear-gradient(to right, 
+        purple,      
+        rgb(172, 172, 24),     
+        #E4405F,        
+        brown);     
+    -webkit-background-clip: text; /* Clip de fondo del texto */
+    background-clip: text; /* Clip de fondo del texto sin prefijo */
+    -webkit-text-fill-color: transparent; /* Relleno transparente */
+    color: transparent; /* Color de texto transparente */
+}
+
+#logo-whatsapp,
+span#nombre-red-social-whatsapp{
+    color: #25D366;
+}
+/*FIN decoracion de logos y nombres de logo de las redes sociales*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer.footer {
+    flex-shrink: 0;
+}
+
+#logo-empresa-footer {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#logo-empresa-footer img {
+    width: 294px;
+    height: 38px;
+}
+
+#copyright-footer {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+}
